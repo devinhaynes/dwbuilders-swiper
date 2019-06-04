@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Tailwinds CDN -->
+    <link href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <!-- Swiper CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>D.W. Builders, Inc.</title>
+</head>
+<body class="text-white">
+    <header class="flex bg-gray-900 justify-between p-2 md:p-4 text-2xl">
+        <div>
+            D.W. Builders, Inc.
+        </div>
+        <div id="main-nav" class="hidden md:flex">
+            <ul class="list-none flex flex-row">
+                <li>
+                    <button class="btn-about">
+                        About
+                    </button>                    
+                </li>
+                <li>
+                    <a class="btn-services">
+                        Services
+                    </a>  
+                </li>   
+                <li>
+                    <a class="btn-gallery">
+                        Gallery
+                    </a>  
+                </li>
+            </ul>
+        </div>
+        <div id="hamburger">
+            <i id="nav-icon" class="fas fa-bars"></i>
+        </div>
+    </header>    
+    <main class="text-gray-900">
+        <!-- Dropdown menu -->
+        <div id="dropdown">
+            <ul class="list-none">
+                <li>
+                    <button class="btn-about">
+                        About
+                    </button>                    
+                </li>
+                <li>
+                    <a class="btn-services">
+                        Services
+                    </a>  
+                </li>   
+                <li>
+                    <a class="btn-gallery">
+                        Gallery
+                    </a>  
+                </li>
+            </ul>
+        </div>
+        <div id="main-swiper" class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div id="intro" class="text-center internal">
+                        <div id="intro-swiper" class="swiper-container internal-swiper bg-gray-400">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide flex flex-col">
+                                    <img src="photos/architect.jpg">
+                                    <div class="border bg-gray-800 text-white p-2 rounded">
+                                        <h3>Experience-Driven</h3>
+                                    </div>
+                                    <p>With over 20 years of contracting experience, D.W. Builders ensures that every project is completed to the utmost satisfaction of the customer.</p>
+                                </div>
+                                <div class="swiper-slide flex flex-col">
+                                    <img src="photos/arch.jpg">
+                                    <div class="border bg-gray-800 text-white p-2 rounded">
+                                        <h3>Quality Builds</h3>
+                                    </div>
+                                    <p>Quality is a top-priority! We know that the customer expects the best results and D.W. Builders commits to the quality promise deserved by every customer.</p>
+                                </div>
+                                <div class="swiper-slide flex flex-col">
+                                    <img src="photos/woodwork.jpg">
+                                    <div class="border bg-gray-800 text-white p-2 rounded">
+                                        <h3>Custom Woodwork</h3>
+                                    </div>
+                                    <p>Every project is different. We understand this and provide each customer with custom designs to fit their wants and needs.</p>
+                                </div>  
+                            </div>
+                        </div>            
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div id="service-section" class="text-center flex flex-wrap justify-center internal">                        
+                        <div class="swiper-container internal-swiper">
+                                <h1 class="bg-gray-800 text-white w-100 p-2">Services</h1>
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide flex flex-col">
+                                    <img class="object-cover" src="photos/residential.jpg" alt="">
+                                    <h2 class="bg-blue-800 text-white">Residential</h2>
+                                    <p>Taking care of your home is an important responsibility. Whether you need a repair or it's time to upgrade, let D.W. Builders improve the quality of your home!</p>
+                                </div>
+                                <div class="swiper-slide flex flex-col">
+                                    <img class="object-cover" src="photos/commercial.jpg" alt="">
+                                    <h2 class="bg-blue-800 text-white">Commercial</h2>
+                                    <p>Every business needs a solid foundation. D.W. Builders has the experience to get your establishment off the ground quickly and easily.<br><br><span class="text-danger">We Specialize In Car Wash Establishments</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="photos" class="swiper-slide">
+                    <div class="internal">
+                        <h1 class="bg-gray-800 text-white p-2">Photo Gallery</h1>
+                        <!-- Slider main container -->
+                        <div id="gallery-swiper" class="swiper-container internal-swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide"><img src="photos/photo1.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="photos/photo2.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="photos/photo3.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="photos/photo4.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="photos/photo5.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="photos/photo6.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="photos/photo7.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="photos/photo8.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="photos/photo9.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="photos/photo10.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="photos/photo11.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="photos/photo12.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="photos/photo13.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="photos/photo14.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="photos/photo15.jpg" alt=""></div>    
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+                        
+                            <!-- If we need scrollbar -->
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </div>          
+    </main>
+    <footer id="page-footer" class="flex flex-col text-center text-sm p-2 bg-gray-900">
+        <div class="p-2 border border-white md:w-3/5 md:mx-auto">
+            <h2>D.W. Builders, Inc</h2>
+        </div>
+        <div class="p-2 hidden sm:flex sm:flex-row sm:justify-center">
+            <a href="https://goo.gl/maps/MNfVYfYbHZc8xo6g9" class="col-6">
+                <div><i class="fas fa-map-marker-alt"></i> 633 Chesopeian Point</div>
+                <div>Virginia Beach, VA 23452</div>  
+            </a>    
+            <div class="col-6"><i class="fa fa-phone" aria-hidden="true"></i> (757) 963-6276</div>            
+        </div>
+        <div class="border-t border-white p-2">            
+            D.W. Builders, Inc. &copy; 2019. All Rights Reserved
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script src="swiper.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

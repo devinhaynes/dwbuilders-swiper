@@ -1,0 +1,135 @@
+body {
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+    background-color: #eee;
+}
+
+h1 { 
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.75em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+header {
+    height: 10vh;
+}
+
+footer {
+    height: 20vh;
+}
+
+main {
+    height: 70vh;
+}
+
+#hamburger {
+    min-height: 40px;
+    min-width: 40px;
+    text-align: center;
+}
+
+#dropdown li {
+    font-size: 1.75rem;
+    padding-left: 2rem;
+    border-bottom: 2px solid #333;
+}
+
+#dropdown li:hover {
+    transform: scale(1.05);
+    background-color: #333;
+    color: white;
+}
+
+#dropdown {
+    display: none;
+    position: absolute;
+    width: 0;
+    right: 0px;
+    height: 60vh;
+    background-color: #eee;
+    transition: width 1s ease 0s;
+    z-index: 3000;
+}
+
+#main-swiper {
+    height: 100%;
+}
+
+.swiper-container {
+    height: 100%;
+}
+
+.internal {
+    height: 100%;
+}
+
+#intro-swiper .swiper-slide p {
+    width: 75%;
+    margin: auto;
+    text-align: center;
+}
+
+#intro img {
+    height: 40%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#service-section {
+    overflow: hidden;
+}
+
+#service-section .swiper-slide p {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 10%;
+    text-align: center;
+}
+
+#service-section img {
+    height: 40%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#gallery-swiper img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.swiper-button-prev {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23eee'%2F%3E%3C%2Fsvg%3E") !important;
+}
+
+.swiper-button-next {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23eee'%2F%3E%3C%2Fsvg%3E") !important;
+}
+
+@media (min-width: 768px) {
+    body {
+        width: 75vw;
+        margin: auto;
+        overflow: auto;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    #main-nav li {
+        padding: .75rem;
+    }
+
+    #main-nav li:hover {
+        background-color: white;
+        color: #333;
+    }
+}
